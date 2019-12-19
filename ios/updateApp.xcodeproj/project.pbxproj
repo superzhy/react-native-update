@@ -20,6 +20,7 @@
 		39C44C2DCC4C8581BBF4F2CE /* libPods-updateAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 771284195A1F4F5882F7CEF1 /* libPods-updateAppTests.a */; };
 		60DBEAA13C07B0C99C843C45 /* libPods-updateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10F44C987B46BA12AB6E957 /* libPods-updateApp.a */; };
 		ABC0656B0DC6E8A97291A69F /* libPods-updateApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B2EC04EF562750BF6A08A9 /* libPods-updateApp-tvOSTests.a */; };
+		FA81888723AB1DCF00DF921C /* ios_upgrade in Resources */ = {isa = PBXBuildFile; fileRef = FA81888623AB1DCF00DF921C /* ios_upgrade */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0771A2EDF4E3084114CC5F1 /* Pods-updateApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-updateApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-updateApp-tvOSTests/Pods-updateApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA81888623AB1DCF00DF921C /* ios_upgrade */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios_upgrade; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* updateApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA81888623AB1DCF00DF921C /* ios_upgrade */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -161,7 +164,6 @@
 				9D22EC19AAFF09686C8BFE8C /* Pods-updateAppTests.debug.xcconfig */,
 				B60ABCE5CB1A04985A67288E /* Pods-updateAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				FA81888723AB1DCF00DF921C /* ios_upgrade in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

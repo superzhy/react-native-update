@@ -14,8 +14,8 @@ import {
   TouchableOpacity,
   Text,
   PermissionsAndroid,
-  Alert,
   Platform,
+  NativeModules,
 } from 'react-native';
 
 const App = () => {
@@ -73,7 +73,14 @@ const App = () => {
         });
     }
     if (iOS) {
-      // TODO: ios更新
+      NativeModules.upgrade.upgrade('123456', msg => {
+        if (msg === 'YES') {
+          // 跳转到APP Stroe
+          NativeModules.upgrade.openAPPStore('123456'); //数字为对应的AppStore引用的ID
+        } else {
+          // TODO: 无更新
+        }
+      });
     }
   };
 
